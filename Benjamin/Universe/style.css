@@ -1,0 +1,12 @@
+#body{
+    background-color: black;
+}
+
+#Titre {
+    width: auto;
+    height: auto;
+    align-content: center;
+    font-style: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
