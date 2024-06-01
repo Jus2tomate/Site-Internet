@@ -1,68 +1,127 @@
-#body{
+/* CSS */
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: black;
 }
 
-#titre {
-    font-style: bold;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-family: "Orbitron",sans-serif;
-    letter-spacing: 5px;
-    width: auto;
-}
-
-#cadre{
-    border:solid;
-    border-color: aliceblue;
-    border-radius: 10px;
-    width: 100%;
-    height: auto;
+#Page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .bande_haut {
     display: flex;
-    align-items: stretch;
-    
-}
-
-#button_home_div{
-    border:solid;
-    border-color: aliceblue;
-    border-radius: 10px;
-    width: 20%;
-    height: auto;
-    margin-right: 1%;
-}
-
-#button_home{
-    background: transparent;
-    font-style: bold;
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    color: transparent;
+    padding: 10px;
     color: rgb(255, 255, 255);
-    font-family: "Orbitron",sans-serif;
-    letter-spacing: 5px;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+    transition: color 0.3s; /* Transition for text color */
 }
 
-#other_div{
-    border:solid;
-    border-color: aliceblue;
-    border-radius: 10px;
-    width: 20%;
-    height: auto;
-    margin-left: 1%;
-}
-
-#other_button_div{
-    background: transparent;
-    font-style: bold;
+#button_home_div, #cadre, #other_div {
+    flex: 1;
     text-align: center;
-    color: rgb(255, 255, 255);
-    font-family: "Orbitron",sans-serif;
-    letter-spacing: 5px;
-    width: 100%;
-    height: 100%;
+}
+
+#cadre h1 {
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    color: white;
+}
+
+.menu-section, .others-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-right: 30px;
+    border: 4.5px solid #ffffff;
+    width: 18%;
     border-radius: 10px;
+    transition: border-color 0.3s; /* Transition for border color */
+    color: white;
+}
+
+.menu-section {
+    align-items: center;
+}
+
+.others-section {
+    align-items: flex-start;
+}
+
+.main-content {
+    flex: 1;
+    padding: 10px;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    transition: border-color 0.3s; /* Transition for border color */
+    margin: 0.8%;
+}
+
+.menu-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    border: 3px solid #333;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: border-color 0.3s, background-color 0.3s; /* Transitions for border and background color */
+}
+
+.menu-content {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.3s ease-out, opacity 0.3s ease-out;
+    opacity: 0;
+    width: 90%;
+    margin: 0.8%;
+}
+
+.menu-content.show {
+    height: 150px; /* Adjust the height to fit the content */
+    opacity: 1;
+}
+
+.menu-item {
+    margin: 5px 0;
+    border-radius: 8px;
+    padding: 5px;
+    border: 1px solid #ffffff;
+    text-align: center;
+    width: 90%;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transitions for background and text color */
+}
+
+.menu-item:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.menu-filter {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    margin-top: auto;
+    padding: 5px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.menu-filter:hover {
+    background-color: transparent;
 }

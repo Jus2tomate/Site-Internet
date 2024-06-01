@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
     <!-- Font criture universe -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,12 +12,33 @@
 </head>
 <body id="body">
     <div id="Page">
+
         <div class="bande_haut">
             <div id="button_home_div"><button type="button" id="button_home">Home</button></div>
             <div id="cadre"><h1 id="titre"> Universe </h1></div>
             <div id="other_div"><button type="button" id="other_button_div">Other</button></div>
         </div>
-        <div id="Menue"></div>
+
+        <div class="content">
+            
+            <div class="menu-section">
+                <div class="menu-title" id="menu-toggle">MENUE</div>
+                <div class="menu-content" id="menu-content">
+                    <div class="menu-item">Planets</div>
+                    <div class="menu-item">Asteroides</div>
+                    <div class="menu-item">Galaxie</div>
+                    <button class="menu-filter">Filtre</button>
+                </div>
+            </div>
+
+            <div class="main-content"></div>
+            <div class="others-section">
+                <div class="menu-title">Others</div>
+                <div class="menu-item">Video Games</div>
+                <div class="menu-item">Scientific</div>
+            </div>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
